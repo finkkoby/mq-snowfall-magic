@@ -365,7 +365,7 @@ var snowStorm = (function(window, document) {
       this.meltFrame = 0;
       this.twinkleFrame = 0;
       this.active = 1;
-      this.fontSize = (10+(this.type/5)*10);
+      this.fontSize = ((10+(this.type/5)*10)*10);
       this.o = document.createElement('div');
       this.o.innerHTML = storm.snowCharacter;
       if (storm.className) {
@@ -381,7 +381,6 @@ var snowStorm = (function(window, document) {
       this.o.style.height = storm.flakeHeight+'px';
       this.o.style.fontFamily = 'arial,verdana';
       this.o.style.cursor = 'default';
-      this.o.style.overflow = 'hidden';
       this.o.style.fontWeight = 'normal';
       this.o.style.zIndex = storm.zIndex;
       if (storm.accessibility) {
@@ -668,3 +667,9 @@ var snowStorm = (function(window, document) {
     return this;
   
   }(window, document));
+
+  snowStorm.followMouse = false;
+  snowStorm.flakesMax = 3000;
+  snowStorm.flakesMaxActive = 1000;
+  snowStorm.animationInterval = 50;
+  snowStorm.useMeltEffect = false;
