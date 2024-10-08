@@ -1,3 +1,7 @@
 html {
-  background-color: black;
+  background-color: whitesmoke;
+}
+
+div.snowstorm {
+  text-shadow: -1px 1px 1px lightgray;
 }

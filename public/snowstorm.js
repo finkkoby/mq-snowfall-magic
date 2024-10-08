@@ -365,7 +365,7 @@ var snowStorm = (function(window, document) {
       this.meltFrame = 0;
       this.twinkleFrame = 0;
       this.active = 1;
-      this.fontSize = ((10+(this.type/5)*10)*10);
+      this.fontSize = ((10+(this.type/5)*10)*7);
       this.o = document.createElement('div');
       this.o.innerHTML = storm.snowCharacter;
       if (storm.className) {
@@ -670,6 +670,8 @@ var snowStorm = (function(window, document) {
 
   snowStorm.followMouse = false;
   snowStorm.flakesMax = 3000;
-  snowStorm.flakesMaxActive = 1000;
+  snowStorm.flakesMaxActive = 100;
   snowStorm.animationInterval = 50;
+  snowStorm.className = 'snowstorm';
+  snowStorm.snowStick = false;
   snowStorm.useMeltEffect = false;
