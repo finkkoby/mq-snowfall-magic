@@ -670,7 +670,7 @@ var snowStorm = (function(window, document) {
 
   snowStorm.followMouse = false;
   snowStorm.flakesMax = 3000;
-  snowStorm.flakesMaxActive = 100;
+  snowStorm.flakesMaxActive = 700;
   snowStorm.animationInterval = 50;
   snowStorm.className = 'snowstorm';
   snowStorm.snowStick = false;
