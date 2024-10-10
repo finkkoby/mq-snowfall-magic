@@ -2,10 +2,8 @@
 
 function Header() {
     return (
-        <div>
-            <header>
-                <h1>Snowfall Magic</h1>
-            </header>
+        <div id="header">
+            <h1>snow.</h1>
         </div>
     )
 }
